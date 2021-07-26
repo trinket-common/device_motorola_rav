@@ -16,7 +16,7 @@
 
 -include device/motorola/sm6125-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/doha
+DEVICE_PATH := device/motorola/rav
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -25,7 +25,7 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/doha_defconfig
+TARGET_KERNEL_CONFIG := vendor/rav_defconfig
 
 # Kernel modules - Audio
 # TARGET_MODULE_ALIASES += \

@@ -7,7 +7,7 @@
 
 set -e
 
-export DEVICE=doha
+export DEVICE=rav
 export DEVICE_COMMON=sm6125-common
 export VENDOR=motorola
 

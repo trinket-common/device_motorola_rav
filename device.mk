@@ -21,7 +21,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := false
 $(call inherit-product, device/motorola/sm6125-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/doha/doha-vendor.mk)
+$(call inherit-product, vendor/motorola/rav/rav-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk

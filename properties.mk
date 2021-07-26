@@ -1,5 +1,5 @@
 #
-# Properties for doha
+# Properties for rav
 #
 
 # Camera
@@ -18,5 +18,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sensor
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.hardware.sensors=doha \
+    ro.hardware.sensors=rav \
     ro.vendor.sensors.mot_ltv=true
