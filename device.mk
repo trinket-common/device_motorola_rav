@@ -15,8 +15,8 @@
 #
 
 PRODUCT_BUILD_SUPER_PARTITION := false
-PRODUCT_SHIPPING_API_LEVEL := 28
-PRODUCT_USE_DYNAMIC_PARTITIONS := false
+PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 $(call inherit-product, device/motorola/sm6125-common/common.mk)
 
@@ -45,19 +45,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh
-
-# NFC
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service \
-    com.android.nfc_extras \
-    SecureElement \
-    NfcNci \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
